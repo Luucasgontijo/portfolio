@@ -5,6 +5,7 @@
 /*===== VARIAVEIS CSS =====*/
 :root {
   --header-height: 3rem;
+  --font-bold: 700;
   --font-semi: 600;
   --font-thin: 500;
   /*===== CORES =====*/
@@ -17,7 +18,7 @@
   --gray-color: hsl(0 0% 80%);
   /*===== FONTES/TIPOGRAFIA =====*/
   --body-font: "Poppins", sans-serif;
-  --big-font-size: 2rem;
+  --big-font-size: 2.5rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
   --hover-font-size: 1.1rem;
