@@ -5,35 +5,43 @@
   font-weight: var(--font-thin);
   font-size: var(--normal-font-size);
   margin: 0px 0px;
+  box-sizing: border-box;
+
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   height: var(--header-height);
   align-items: center;
-  padding: var(--mb-1) var(--mb-3);
-}
+  padding: var(--mb-1) var(--mb-4);
+  
+  
+  background-color: white;
+  border-bottom: 1px solid var(--gray-color);
 
-hr {
-  width: 100vw;
-  height: 1px;
-  background-color: var(--gray-color);
-  border: none;
-  margin-bottom: var(--mb-2);
 }
 
 header h1 {
   display: flex;
-  margin: 0px;
+  cursor: default;
   text-align: center;
+  font-size: var(--h2-font-size);
+}
+header h1 span{
+  display: flex;
+  font-family: 'Fira Code', monospace;
+  font-size: var(--h2-font-size);
 }
 
 header nav {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  min-width: 30vw;
+  min-width: 30%;
   gap: var(--mb-1);
 }
 
@@ -55,4 +63,48 @@ header nav li a:hover {
   align-items: center;
   transition: all 0.3s ease-out;
   color: var(--first-color);
+}
+
+.contato{
+  color: white;
+  background-color: var(--first-color);
+  padding: .8rem 1rem;
+  border-radius: 1rem;
+}
+.contato:hover{
+  color: white;
+
+}
+
+
+.header.scrolled {
+  /* Adicione aqui qualquer estilo adicional para o header quando estiver scrollado */
+}
+
+
+
+@media (max-width: 768px) {
+  header {
+    height: var(--alternative-header-height);
+    align-items: space-between;   
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0;
+    transition: all 0.3s ease-in;  
+    row-gap: 1rem;
+  }
+  
+
+  .hidden {
+    display: none;
+  }
+
+  .header.scrolled {
+    height: var(--header-height);
+    transition: all 0.3s ease-in;   
+  }
+  .header.scrolled nav {
+    height: var(--header-height);
+    transition: all 0.3s ease-in;   
+  }
 }
