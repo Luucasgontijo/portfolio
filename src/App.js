@@ -1,19 +1,19 @@
 // src/App.js
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Header from './components/Header/Header';
 import './App.css';
 import './index.css';
 import Tooltip from './components/Tooltip/Tooltip'; 
 
-import { faEnvelope, faSquarePhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faSquarePhone, faCopy } from '@fortawesome/free-solid-svg-icons';
 
 // Importa o componente e o ícone do LinkedIn
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGolang, faLinkedin, faLinux, faPython } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faHtml5, faCss3Alt, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faJs, faReact, faSquareWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 
 function App() {
@@ -36,6 +36,20 @@ function App() {
     }
   };
 
+  
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleCopyEmail = () => {
+    const email = 'gontijo@discente.ufg.br';
+    navigator.clipboard.writeText(email).then(() => {
+      setShowPopup(true);
+      setTimeout(() => {
+        setShowPopup(false);
+      }, 2000); // Esconde o popup após 2 segundos
+    });
+  };
+
   return (
     <div className="App">
       <Header />
@@ -56,11 +70,12 @@ function App() {
         </div>
         <div className="medias">
           <div className="icon-media-container">
-             <FontAwesomeIcon icon={faGithub}  title='Abrir no Github' className='icon'/> 
+              <a target='blank' href='https://github.com/Luucasgontijo'><FontAwesomeIcon  icon={faGithub}  title='Abrir no Github' className='icon'/> </a>
           </div>
           
           <div className="icon-media-container">
-            <FontAwesomeIcon icon={faLinkedin} title='Abrir no Linkdin' className='icon'/>
+            <a href='https://www.linkedin.com/in/lucas-gontijo-6887b92b3/' target='blank'><FontAwesomeIcon icon={faLinkedin} title='Abrir no Linkedin' className='icon'/></a>
+          
           </div>
           <a className='contato' href="#contato" onClick={(e) => handleClick(e, 'contato')}>Contato</a>
         </div>
@@ -167,32 +182,78 @@ function App() {
         <h1 className='section-title' id="projetos">Meus projetos</h1> 
         
       </div>
-      <div className="contact">
+
+
         <h1 className='section-title' id="contato">Contato</h1> 
-        <div className="contact-ways">
-           <div className="medias medias-bottom">
-          <div className="icon-media-container">
-             <FontAwesomeIcon icon={faGithub}  title='Abrir no Github' className='icon'/> 
+
+        
+        <div className="contact">
+        
+
+
+          <div className="contact-ways">
+            
+            <div className="medias medias-bottom">
+                <div className="icon-media-container">
+                  <a target='blank' href='https://github.com/Luucasgontijo'><FontAwesomeIcon  icon={faGithub}  title='Abrir no Github' className='icon'/> </a>
+                  
+                </div>
+                <div className="icon-media-container">
+                    <a href='https://www.linkedin.com/in/lucas-gontijo-6887b92b3/' target='blank'><FontAwesomeIcon icon={faLinkedin} title='Abrir no Linkedin' className='icon'/></a>
+                </div>
+                <div className="icon-media-container">
+                <FontAwesomeIcon 
+                    icon={faEnvelope} 
+                    title='Copiar Email' 
+                    className='icon' 
+                    onClick={handleCopyEmail} 
+
+                  />
+                  {showPopup && <div className="popup">Email copiado para caixa de transferência</div>}
+                </div>
+                <div className="icon-media-container">
+                  <FontAwesomeIcon icon={faSquarePhone} title='Abrir no Linkdin' className='icon'/>
+                </div>     
           </div>
+          </div>
+          <div className='text-info'>
+            <div className='contact-container'> 
+                <FontAwesomeIcon icon={faCopy} title='Copiar Email' 
+                  className='copy' 
+                  onClick={handleCopyEmail} 
+
+                />
+                {showPopup && <div className="popup">Email copiado para caixa de transferência</div>}
+                <h3>
+                gontijo@discente.ufg.br
+                </h3>
+              
+            </div>
+            
+            <h3>
+              Goiânia, Goiás, Brasil
+            </h3>
+
+            <div className='contact-container'>
+              <a target='blank' href='https://wa.me/5562985372793'><FontAwesomeIcon icon={faSquareWhatsapp} className='whatsapp-icon' /></a>
+            
+            <h3>
+              +55 (62) 98537-2793
+            </h3>
+              </div>
+            
+            
+          </div>
+
           
-          <div className="icon-media-container">
-            <FontAwesomeIcon icon={faLinkedin} title='Abrir no Linkdin' className='icon'/>
-          </div>
-          <div className="icon-media-container">
-            <FontAwesomeIcon icon={faEnvelope} title='Abrir no Linkdin' className='icon'/>
-          </div>
-          <div className="icon-media-container">
-            <FontAwesomeIcon icon={faSquarePhone} title='Abrir no Linkdin' className='icon'/>
-          </div>
-         
         </div>
 
-        </div>
-      </div>
 
       </main>
       
     </div>
+
+
   );
 }
 
