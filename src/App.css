@@ -1,3 +1,5 @@
+/* === general css === */
+
 * {
     font-family: var(--body-font);
     text-decoration: none;
@@ -5,38 +7,29 @@
     font-weight: var(--font-thin);
     font-size: var(--normal-font-size);
     margin: 0px 0px;
-    
-
   }
 
-html {
-  scroll-behavior: smooth;
-}
-
+/* === main css === */
 main {
-    position: absolute;
-    width: 100%;
-    top: var(--header-height);
-    z-index: var(--z-back);
     display: flex;
     flex-direction: column;
     align-items: space-between;
     justify-content: space-evenly;
-    min-height: 100vh;
+    min-height: 100vh; /*for the main part takes at least all the vertical screen space*/
+    position: absolute;
+    width: 100%;
+    top: var(--header-height); /*defined in index.css*/
+    z-index: var(--z-back);
+
+    
     padding: var(--mb-1) var(--mb-4);
+    /* thats some scroll related css */
     overflow: auto;
     scrollbar-width: none;
     }
   
 
-.greeting{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  cursor: default;
-  
-}
-
+/* === .presentation div (contains greeting and my photo) === */
 .presentation {
   margin: var(--mb-4) 0px;
   width: 100%;
@@ -44,18 +37,20 @@ main {
   align-items: center;
   justify-content: space-between ;
 }
-  
-main h2 {
-    font-size: var(--big-font-size);
-    font-weight: var(--font-bold);
 
-  }
-main h2 span{
-  font-size: var(--big-font-size);
-  font-weight: var(--font-bold);
-  color: var(--first-color);
+/* ====== left section of .presentation div (greeting text) ====== */
+.greeting{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  cursor: default;
+  user-select: none; /* Navegadores modernos */
+  -webkit-user-select: none; /* Safari e Chrome */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE e Edge */
 }
 
+/* ==== my face related ==== */
 .face-container{
   display: flex;
   justify-content: center;
@@ -78,6 +73,8 @@ main h2 span{
   opacity: 0.9;
 }
 
+
+/* ====== div containing the social medias -> git and linkdin ====== */
 .medias {
   display: flex;
   justify-content: start;
@@ -99,13 +96,24 @@ main h2 span{
   cursor: pointer;
 }
 
-
 .icon-media-container{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 3rem;
   height: 3rem;
+}
+
+/* ====== major for text on about me section ====== */
+main h2 {
+    font-size: var(--big-font-size);
+    font-weight: var(--font-bold);
+    
+    }
+main h2 span{
+  font-size: var(--big-font-size);
+  font-weight: var(--font-bold);
+  color: var(--first-color);
 }
 
 .about h2{
@@ -119,22 +127,23 @@ main h2 span{
   font-weight: var(--font-bold);
   color: var(--second-color);
 }
+
+/* === css for the title of each topic on page ===  */
+
 .section-title{
   text-decoration: underline var(--first-color); 
   text-underline-offset: 1.2rem;
-  
   font-size: var(--big-font-size);
   font-weight: var(--font-bold);
   margin: var(--mb-3) 0px;
   text-align: center;
 
 }
-
-
 .first-text{
   margin-bottom: 1rem;
 }
 
+/* *****====== carousel related css ======***** */
 
 @keyframes slide {
   from {
@@ -150,9 +159,7 @@ main h2 span{
   background: white;
   white-space: nowrap;
   position: relative;
-  transition: all 5s ease-in;
 }
-
 .logos:before,
 .logos:after {
   position: absolute;
@@ -162,36 +169,30 @@ main h2 span{
   content: "";
   z-index: 2;
 }
-
 .logos:before {
   left: 0%;
   width: 10%;
   background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
 }
-
 .logos:after {
   right: 0;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
   width: 10%;
 }
-
 .logos:hover .logos-slide {
   animation-play-state: paused;
   transition: all 1s ease-in;
 }
-
 .logos-slide {
   display: inline-block;
   animation: 10s slide infinite linear;
   margin: var(--mb-3) 0px;
 }
-
 .logos-slide .skills-logo {
   height: 50px;
   margin: 0 40px;
   
 }
-
 .logos-slide svg{
   padding-top: 40px;
   width: 3.5rem;
@@ -363,11 +364,5 @@ font-weight: 300;
 }
 
 
-body.dark-theme .icon{
-  color: white;
-}
 
 
-body.dark-theme .logos{
-  background-color: black;
-}

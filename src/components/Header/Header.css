@@ -1,47 +1,4 @@
-.light-theme {
-  background-color: white;
-  color: black;
-}
-.dark-theme {
-
-  background-color: rgb(0, 0, 0);
-  color: white;
-}
-
-
-
-#toggle-button {
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-.theme-toggle-button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;;
-  background-color: none;
-  padding: 0px 0px;
-  cursor: pointer;
-
-  border-radius: 100vw;
-  border: none;
-
-}
-.theme-toggle-button:hover{
-  background-color: var(--gray-color);
-}
-
-.buttonContainer{
-  /* background-color: whitesmoke; */
-  border-radius: 100vw;
-}
-
-
-
-
+/* general css */
 * {
   font-family: var(--body-font);
   text-decoration: none;
@@ -50,33 +7,11 @@
   font-size: var(--normal-font-size);
   margin: 0px 0px;
   box-sizing: border-box;
+  
 
 }
-body.dark-theme .header {
-  background-color: black;
-  color: white;
-}
-body.dark-theme  a{
-  background-color: black;
-  color: white;
-}
-body.dark-theme h1{
-  color: white;
-}
-body.dark-theme h2{
-  color: white;
-}
-body.dark-theme h3{
-  color: white;
-}
-body.dark-theme span{
-  color: white;
-}
 
-
-
-
-
+/* ****====== header effects ======**** */
 header {
   position: fixed;
   top: 0;
@@ -85,45 +20,41 @@ header {
   justify-content: space-between;
   height: var(--header-height);
   align-items: center;
-  padding: var(--mb-1) var(--mb-4);
-  
-  
-  background-color: white;
+  padding: 0px 2rem;
   border-bottom: 1px solid var(--gray-color);
+  background-color: var(--header-color);
 
+  /* === for disabling text selection when click and drag (for header text)=== */
+  user-select: none; /* Navegadores modernos */
+  -webkit-user-select: none; /* Safari e Chrome */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE e Edge */
 }
 
+/* === ---> logo (lucas gontijo)  === */
 header h1 {
   display: flex;
   cursor: default;
   text-align: center;
   font-size: var(--h2-font-size);
 }
-header h1 span{
-  display: flex;
-  font-family: 'Fira Code', monospace;
-  font-size: var(--h2-font-size);
-}
 
+/* === nav bar items === */
 header nav {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  min-width: 30%;
-  gap: var(--mb-1);
-}
-
-header nav li{
-  width: 120%;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  list-style: none;
+}
+header nav li{
+  display: flex;
+  width: 9vw;
+  justify-content: center;
+  align-items: center;
 }
 header nav li a{
   transition: all 0.3s ease-in;
 }
-
 header nav li a:hover {
   font-size: var(--hover-font-size);
   display: flex;
@@ -133,25 +64,31 @@ header nav li a:hover {
   color: var(--first-color);
 }
 
+/* === contact button adjusts ===   */
 .contato{
   color: white;
   background-color: var(--first-color);
-  padding: .8rem 1rem;
+  padding: .5rem .6rem;
   border-radius: 1rem;
 }
+/* === for maintein the color of the text inside the button (it would change based on the hover inherit of li ===) */
 .contato:hover{
   color: white;
-
 }
 
 
-.header.scrolled {
-  /* Adicione aqui qualquer estilo adicional para o header quando estiver scrollado */
+@media (max-width: 1024px) {
+  /* === spacing on nav items === */
+  header nav li{
+    display: flex;
+    width: 12vw;
+  }
+  
 }
-
 
 
 @media (max-width: 768px) {
+  /* === ---> header on narrow screen ---> logo on top of nav bar === */
   header {
     height: var(--alternative-header-height);
     align-items: space-between;   
@@ -161,21 +98,70 @@ header nav li a:hover {
     transition: all 0.3s ease-in;  
     row-gap: 1rem;
   }
-  
-
+  /* === nav bar distance and spacing adjusts === */
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-between;
+    gap: 1.5rem;
+  }
+  /* === logo (lucas gontijo) vanishing effect when scroll === */
   .hidden {
     display: none;
   }
-
   .header.scrolled {
     height: var(--header-height);
     transition: all 0.3s ease-in;   
   }
-  .header.scrolled nav {
-    height: var(--header-height);
-    transition: all 0.3s ease-in;   
-  }
+  
 }
+
+
+/* *****======= dark theme related =======*****  */
+
+/* === ---> general theme color change === */
+.dark-theme {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
+/* === ---> carousel background color === */
+.dark-theme .logos {
+  background: black;
+  color: white;
+}
+/* === ---> carousel fade in effect (both sides) toggle=== */
+.dark-theme .logos:before{
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), black);
+}
+.dark-theme .logos:after {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), black);
+}
+/* === theme-toggle-button (header) === */
+.theme-toggle-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;;
+  background-color: none;
+  padding: 0px 0px;
+  cursor: pointer;
+  border-radius: 100vw;
+  border: none;
+  transition: all 0.3s ease;
+}
+/* ==== Hover redondo do theme_toggle_button ==== */
+.theme-toggle-button:hover{
+  background-color: var(--gray-color)
+}
+
+
+
 
 
 
