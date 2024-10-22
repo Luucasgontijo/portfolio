@@ -16,7 +16,9 @@
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 90%, 65%);
   --second-color: hsl(var(--hue-color), 0%, 15%);
-  --gray-color: hsl(0 0% 80%);
+  --third-color: hsl(var(--hue-color), 0%, 55%);
+  --gray-color: hsl(var(--hue-color), 0%, 90%);
+
   /*===== FONTES/TIPOGRAFIA =====*/
   --body-font: "Poppins", sans-serif;
 

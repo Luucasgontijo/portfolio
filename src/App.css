@@ -5,6 +5,8 @@
     font-weight: var(--font-thin);
     font-size: var(--normal-font-size);
     margin: 0px 0px;
+    
+
   }
 
 html {
@@ -22,7 +24,10 @@ main {
     justify-content: space-evenly;
     min-height: 100vh;
     padding: var(--mb-1) var(--mb-4);
+    overflow: auto;
+    scrollbar-width: none;
     }
+  
 
 .greeting{
   display: flex;
@@ -298,9 +303,7 @@ h3{
 font-weight: 300;
 }
 
-
-
-
+ 
 /* +====== MEDIA QUERIES ======+ */
 
 
@@ -357,4 +360,14 @@ font-weight: 300;
   }
 
   
+}
+
+
+body.dark-theme .icon{
+  color: white;
+}
+
+
+body.dark-theme .logos{
+  background-color: black;
 }
