@@ -79,11 +79,71 @@ header nav li a:hover {
 
 @media (max-width: 1024px) {
   /* === spacing on nav items === */
-  header nav li{
+  header nav li a{
     display: flex;
-    width: 12vw;
+
+    font-size: var(--normal-font-size);
   }
-  
+  header nav {
+    justify-content: space-around ;
+    width: 90vw;
+  }
+  header nav li {
+    width: 25vw;
+    text-align: center;
+  }
+  a.contato{
+    background: none;
+    padding: none;
+    color: var(--second-color);
+  }
+  a.contato:hover{
+;
+    font-size: var(--hover-font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-out;
+    color: var(--first-color);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  /* === spacing on nav items === */
+  header nav li a{
+    display: flex;
+
+    font-size: var(--smaller-font-size);
+  }
+  header nav {
+    justify-content: space-around ;
+    width: 90vw;
+  }
+  header nav li {
+    width: 25vw;
+    text-align: center;
+  }
+  a.contato{
+    background: none;
+    padding: none;
+    color: var(--second-color);
+  }
+  header a.contato:hover{
+    font-size: var(--smaller-font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-out;
+    color: var(--first-color);
+  }
+  header nav li a:hover{
+    font-size: var(--smaller-font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-out;
+    color: var(--first-color);
+  }
 }
 
 

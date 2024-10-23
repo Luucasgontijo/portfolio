@@ -58,9 +58,11 @@ function App() {
         <div className="presentation">
 
         <div className="greeting">
-          <h2>Olá, </h2>
+          {/* <h2>Olá, </h2> */}
+          <h2>Seja bem vindo ao meu portfolio.</h2>
           <h2> Me chamo <span> Lucas</span>, sou</h2>
           <h2>desenvolvedor front-end.</h2>
+          
         </div>
 
         <div className='face-container'>
@@ -78,7 +80,7 @@ function App() {
             <a href='https://www.linkedin.com/in/lucas-gontijo-6887b92b3/' target='blank'><FontAwesomeIcon icon={faLinkedin} title='Abrir no Linkedin' className='icon' /></a>
             
           </div>
-          <a className='contato' href="#contato" onClick={(e) => handleClick(e, 'contato')}>Contato</a>
+          <a className='contato contato-main' href="#contato" onClick={(e) => handleClick(e, 'contato')}>Contato</a>
         </div>
         <div className="about-container">
         <h1 className='section-title' id="sobre"> Sobre mim </h1>
