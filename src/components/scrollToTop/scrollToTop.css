@@ -1,6 +1,6 @@
 .scroll-to-top {
     position: fixed;
-    bottom: var(--mb-2)G;
+    bottom: var(--mb-2);
     right: var(--mb-2);
     cursor: pointer;
     z-index: 1000;
