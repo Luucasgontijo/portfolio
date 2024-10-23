@@ -4,7 +4,7 @@ import './Header.css'; // Importa o CSS específico do Header (opcional)
 // import lightModeIcon from '.';
 // import darkModeIcon from './assets/moon.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLanguage } from '@fortawesome/free-solid-svg-icons';
+
 
 function Header() {
 

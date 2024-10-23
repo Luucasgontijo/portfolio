@@ -7,6 +7,8 @@
     font-weight: var(--font-thin);
     font-size: var(--normal-font-size);
     margin: 0px 0px;
+    overflow-x: hidden;
+
   }
 
 /* === main css === */
@@ -333,15 +335,26 @@ font-weight: 300;
 @media (max-width: 692px) {
   main {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     top: var(--alternative-header-height);
+    padding:  var(--mb-1) ;
   }
   .medias {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
+  }
+  .certificate-container h2 {
+    font-size: var(--normal-font-size);
+  }
+  .certificate-container a {
+    width: 90vw;
   }
 
+  .face{
+    width: 90vw;
+  }
+  
   .contact {
     display: flex;
     flex-direction: column;
@@ -362,6 +375,21 @@ font-weight: 300;
 
 @media (max-width: 1025px) {
   
+
+  .about h2{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-thin);
+    color: var(--second-color);
+    text-align: center;
+    
+    
+  }
+  .about span{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-bold);
+    color: var(--second-color);
+}
+  
   .presentation{
     flex-direction: column;
     text-align: center;
@@ -372,11 +400,13 @@ font-weight: 300;
     /* justify-content: space-between; */
   }
 
+  
+
   .certificate-container {
     display: flex;
     align-items: center;
     justify-content: start;
-    margin: 4rem 0px;
+    margin: var(--mb-1) 0px;
     
     
   }
@@ -388,6 +418,10 @@ font-weight: 300;
   .contact-ways{
     margin: 0px 0px ;
   }
+  .section-title{
+    font-size: var(--h2-font-size);
+  }
+
 
   
 }

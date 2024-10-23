@@ -75,8 +75,8 @@ function App() {
           </div>
           
           <div className="icon-media-container">
-            <a href='https://www.linkedin.com/in/lucas-gontijo-6887b92b3/' target='blank'><FontAwesomeIcon icon={faLinkedin} title='Abrir no Linkedin' className='icon'/></a>
-          
+            <a href='https://www.linkedin.com/in/lucas-gontijo-6887b92b3/' target='blank'><FontAwesomeIcon icon={faLinkedin} title='Abrir no Linkedin' className='icon' /></a>
+            
           </div>
           <a className='contato' href="#contato" onClick={(e) => handleClick(e, 'contato')}>Contato</a>
         </div>
@@ -128,6 +128,7 @@ function App() {
         <div className='img-container'>
               <img src='./MIT.svg'  className='certificate-img' /> 
           </div>
+            
             <a href='https://courses.edx.org/certificates/ec0f70d152b541f4b7cc09ac8407fd12' target='blank'><h2>edX Verified Certificate for Introduction to Computer Science and Programming Using Python</h2> </a>
         </div>
         
