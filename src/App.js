@@ -6,6 +6,7 @@ import Header from './components/Header/Header';
 import './App.css';
 import './index.css';
 import Tooltip from './components/Tooltip/Tooltip'; 
+import ScrollToTop from './components/scrollToTop/scrollToTop'; // Aj
 
 import { faEnvelope, faSquarePhone, faCopy } from '@fortawesome/free-solid-svg-icons';
 
@@ -63,7 +64,7 @@ function App() {
         </div>
 
         <div className='face-container'>
-          <img className='face' src="/face.png"/>
+          <img className='face' src="/face7.png"/>
         </div>
         
 
@@ -250,6 +251,7 @@ function App() {
 
 
       </main>
+      <ScrollToTop></ScrollToTop>
       
     </div>
 

@@ -105,10 +105,10 @@ function Header() {
             )}
               </div>
             </li>
-            <li>
+            {/* <li>
             
             <FontAwesomeIcon icon={faLanguage} className='faLanguage' />
-            </li>
+            </li> */}
       </nav>
 
     </header>

@@ -54,24 +54,16 @@ main {
 .face-container{
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 360px;
-  height: 295px;
+  align-items: center;  
 
 }
 
 .face{
-  width: 350px;
+  width: 450px;
   height: auto;
   transition: all 0.3s ease-in; 
 }
-.face:hover{
-  width: 355px;
-  height: auto;
-  transition: all 0.3s ease-in; 
-  padding: 0px 0px;
-  opacity: 0.9;
-}
+
 
 
 /* ====== div containing the social medias -> git and linkdin ====== */
@@ -305,6 +297,35 @@ font-weight: 300;
 }
 
  
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.circle {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: 50px;
+    background-color: #007bff; /* Cor da bola */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.circle:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+.arrow {
+    font-size: 20px; /* Ajuste o tamanho da seta */
+    color: white; /* Cor da seta */
+}
 /* +====== MEDIA QUERIES ======+ */
 
 
@@ -358,6 +379,14 @@ font-weight: 300;
     margin: 4rem 0px;
     
     
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-ways{
+    margin: 0px 0px ;
   }
 
   

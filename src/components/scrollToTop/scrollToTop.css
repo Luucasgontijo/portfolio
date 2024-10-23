@@ -1,0 +1,36 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: var(--mb-2);
+    right: var(--mb-2);
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* Move o botão para baixo */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Adiciona transições para opacidade e transformação */
+}
+
+.scroll-to-top.visible {
+    opacity: 1; /* Fica visível */
+    transform: translateY(0); /* Retorna para a posição original */
+}
+
+.circle {
+    width: 4rem; /* Ajuste o tamanho conforme necessário */
+    height: 4rem;
+    background-color: var(--second-color); /* Cor da bola */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.circle:hover {
+    background-color: var(--first-color); /* Cor da bola ao passar o mouse */
+}
+
+.arrow {
+    font-size: 20px; /* Ajuste o tamanho da seta */
+    color: var(--header-color); /* Cor da seta */
+}
