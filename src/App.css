@@ -11,6 +11,8 @@
 
   }
 
+
+
 /* === main css === */
 main {
     display: flex;
@@ -19,20 +21,33 @@ main {
     justify-content: space-evenly;
     min-height: 100vh; /*for the main part takes at least all the vertical screen space*/
     position: absolute;
-    width: 100%;
+    width: clamp(300px, 100vw, 100vw);
     top: var(--header-height); /*defined in index.css*/
     z-index: var(--z-back);
     padding: var(--mb-1) var(--mb-4);
     /* thats some scroll related css */
     overflow: auto;
     scrollbar-width: none;
-    }
+}
+
+/* determina o tamanho de fonte dos h1, com excessão do h1 do logo (header) */
+h1:not(#logo){
+  font-size: var(--big-font-size);
+  font-weight: var(--font-bold);
+}
+h2, span{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi);
+
+  span{
+    font-weight: var(--font-bold);
+  }
+}
   
 
 /* === .presentation div (contains greeting and my photo) === */
 .presentation {
   margin: var(--mb-4) 0px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between ;
@@ -48,21 +63,17 @@ main {
   -webkit-user-select: none; /* Safari e Chrome */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE e Edge */
+  
 }
 
 /* ==== my face related ==== */
-.face-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-
-}
-
-.face{
-  width: 450px;
+.face-container, 
+.face-container img{
+  flex: none;
+  width: clamp(450px, 35vw, 40vw);
   height: auto;
-  transition: all 0.3s ease-in; 
 }
+
 
 
 
@@ -73,66 +84,39 @@ main {
   align-items: center;
   gap: 1rem;
   margin: var(--mb-3) 0px;
-}
 
-.medias .icon {
-  font-size: var(--big-font-size);
-  color: var(--first-color);
-  transition: all 0.3s ease-in;
-}
-
-.medias .icon:hover{
-  font-size: var(--big2-font-size);
-  transition: all 0.3s ease-out;
-  opacity: 0.8; 
-  cursor: pointer;
-}
-
-.icon-media-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3rem;
-  height: 3rem;
-}
-
-/* ====== major for text on about me section ====== */
-main h2 {
-    font-size: var(--big-font-size);
-    font-weight: var(--font-bold);
-    
-    }
-main h2 span{
-  font-size: var(--big-font-size);
-  font-weight: var(--font-bold);
-  color: var(--first-color);
-}
-
-.about h2{
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-thin);
-  color: var(--second-color);
+  /* for proper hover effect */
+  div{
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
   
+
+  .icon {
+    font-size: var(--big-font-size);
+    color: var(--first-color);
+    transition: all 0.3s ease-in;
+
+    &:hover{
+      font-size: var(--big2-font-size);
+      transition: all 0.3s ease-out;
+      opacity: 0.8; 
+      cursor: pointer;
+      }
+    }
+  }
 }
-.about span{
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-bold);
-  color: var(--second-color);
-}
+
+
+
+
+
 
 /* === css for the title of each topic on page ===  */
 
-.section-title{
-  text-decoration: underline var(--first-color); 
-  text-underline-offset: 1.2rem;
-  font-size: var(--big-font-size);
-  font-weight: var(--font-bold);
+.section-title {
   margin: var(--mb-3) 0px;
   text-align: center;
-
-}
-.first-text{
-  margin-bottom: 1rem;
 }
 
 /* *****====== carousel related css ======***** */
@@ -349,10 +333,7 @@ font-weight: 300;
     width: 90vw;
   }
 
-  .face{
-    width: 90vw;
-  }
-  
+
   .contact {
     display: flex;
     flex-direction: column;
@@ -364,9 +345,16 @@ font-weight: 300;
   .contact-ways{
     margin: 0px 0px ;
   }
+  
 
 }
 
+@media (max-width: 500px) {
+  .presentation h2, .presentation span{
+    font-size: var(--big-font-size);
+  }
+  
+}
 
 
 /* Desktop  */
@@ -389,7 +377,9 @@ font-weight: 300;
   .presentation{
     flex-direction: column;
     text-align: center;
+
   }
+  
   .medias {
     margin-top: 2rem;
     margin-bottom: 2rem;

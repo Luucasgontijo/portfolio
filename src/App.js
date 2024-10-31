@@ -58,40 +58,41 @@ function App() {
         <div className="presentation">
 
         <div className="greeting">
-          {/* <h2>Olá, </h2> */}
-          <h2>Seja bem vindo ao meu portfolio.</h2>
-          <h2> Me chamo <span> Lucas</span>, sou</h2>
-          <h2>desenvolvedor front-end.</h2>
-          
+          <h1>Seja bem vindo ao meu portfolio.</h1>
+          <h1> Me chamo Lucas, sou</h1>
+          <h1>desenvolvedor front-end.</h1>
         </div>
 
         <div className='face-container'>
-          <img className='face' src="/face7.png"/>
+          <img  src="/face7.png"/>
         </div>
         
 
         </div>
+
         <div className="medias">
-          <div className="icon-media-container">
-              <a target='blank' href='https://github.com/Luucasgontijo'><FontAwesomeIcon  icon={faGithub}  title='Abrir no Github' className='icon'/> </a>
+          <div>
+              <a target='blank' href='https://github.com/Luucasgontijo'>
+              <FontAwesomeIcon  icon={faGithub}  title='Abrir no Github' className='icon'/> 
+              </a>
           </div>
-          
-          <div className="icon-media-container">
-            <a href='https://www.linkedin.com/in/lucas-gontijo-6887b92b3/' target='blank'><FontAwesomeIcon icon={faLinkedin} title='Abrir no Linkedin' className='icon' /></a>
-            
+          <div>
+            <a href='https://www.linkedin.com/in/lucas-gontijo-6887b92b3/' target='blank'>
+            <FontAwesomeIcon icon={faLinkedin} title='Abrir no Linkedin' className='icon' />
+            </a>
           </div>
           <a className='contato contato-main' href="#contato" onClick={(e) => handleClick(e, 'contato')}>Contato</a>
         </div>
         <div className="about-container">
-        <h1 className='section-title' id="sobre"> Sobre mim </h1>
-        <div className="about">
-        
-          <h2 className='first-text'>Iniciei minha jornada em Engenharia Elétrica (UFG), no ano de 2023, mas decidi alternar, e ingressei na graduação de <span>Engenharia de Software</span>  (UFG) em Janeiro de 2024. Atualmente, estou focado em desenvolvimento front-end, utilizando tecnologias como <span>React</span>, <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. </h2>
+          <h1 className='section-title' id="sobre"> Sobre mim </h1>
+          <div className="about">
+          
+            <h2>Iniciei minha jornada em Engenharia Elétrica (UFG), no ano de 2023, mas decidi alternar, e ingressei na graduação de <span>Engenharia de Software</span>  (UFG) em Janeiro de 2024. Atualmente, estou focado em desenvolvimento front-end, utilizando tecnologias como <span>React</span>, <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. </h2>
 
-          <h2> Além dessas tecnologias, lido bem com <span>Golang</span>, <span>Node.js</span>, sou familiarizado com a utilização de <span>Linux (SO)</span> , e de  
-          <span> bancos de dados SQL</span>  e estou me  especializando em <span>Python</span>  e aplicações focadas em IA(LLMS).</h2>
+            <h2> Além dessas tecnologias, lido bem com <span>Golang</span>, <span>Node.js</span>, sou familiarizado com a utilização de <span>Linux (SO)</span> , e de  
+            <span> bancos de dados SQL</span>  e estou me  especializando em <span>Python</span>  e aplicações focadas em IA(LLMS).</h2>
 
-        </div>
+          </div>
         
         <div className="carousel-container">
         <div class="logos">
@@ -198,14 +199,14 @@ function App() {
           <div className="contact-ways">
             
             <div className="medias medias-bottom">
-                <div className="icon-media-container">
+                <div>
                   <a target='blank' href='https://github.com/Luucasgontijo'><FontAwesomeIcon  icon={faGithub}  title='Abrir no Github' className='icon'/> </a>
                   
                 </div>
-                <div className="icon-media-container">
+                <div>
                     <a href='https://www.linkedin.com/in/lucas-gontijo-6887b92b3/' target='blank'><FontAwesomeIcon icon={faLinkedin} title='Abrir no Linkedin' className='icon'/></a>
                 </div>
-                <div className="icon-media-container">
+                <div>
                 <FontAwesomeIcon 
                     icon={faEnvelope} 
                     title='Copiar Email' 
@@ -215,7 +216,7 @@ function App() {
                   />
                   {showPopup && <div className="popup">Email copiado para caixa de transferência</div>}
                 </div>
-                <div className="icon-media-container">
+                <div>
                   <FontAwesomeIcon icon={faSquarePhone} title='Abrir no Linkdin' className='icon'/>
                 </div>     
           </div>

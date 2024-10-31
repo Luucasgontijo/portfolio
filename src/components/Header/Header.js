@@ -89,7 +89,7 @@ function Header() {
   
   return (
     <header className={isScrolled ? 'header scrolled' : 'header'}> 
-      <h1 className={isScrolled ? 'hidden' : ''}>
+      <h1 className={isScrolled ? 'hidden' : ''} id='logo'>
       &lt;lucas gontijo&gt;
       </h1>
       <nav>
