@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 
+
 import Header from './components/Header/Header';
 import './App.css';
 import './index.css';
@@ -15,6 +16,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGolang, faLinkedin, faLinux, faPython } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faHtml5, faCss3Alt, faJs, faReact, faSquareWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import Projects from './components/Projects/Projects';
+
 
 
 function App() {
@@ -69,6 +72,9 @@ function App() {
         
 
         </div>
+
+        
+        
 
         <div className="medias">
           <div>
@@ -184,8 +190,9 @@ function App() {
       
       </div>   
       <div className="Projects">
-        <h1 className='section-title' id="projetos">Meus projetos</h1> 
         
+        <h1 className='section-title' id="projetos">Meus projetos</h1> 
+        <Projects/>
       </div>
 
 

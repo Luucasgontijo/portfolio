@@ -1,0 +1,101 @@
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.card{
+    color: white;
+    background-color: white;
+    margin: 1rem;
+    padding: 1.5rem ;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    min-width: clamp(5rem, 5 rem, 10rem);
+}
+.card:hover{
+    scale: 1.01;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+h4{
+    color: black;
+    font-weight: var(--font-semi);
+    font-size: var(--h2-font-size);
+}
+
+p{
+    color: black;
+    font-weight: var(--font-superthin);
+}
+
+.project-image{
+    width: 100%;
+    height: auto;
+}
+.button-div{
+    display: flex;
+    justify-content: space-around;
+
+    padding-top: .5rem  ;
+    align-items: center;
+}
+
+.project-button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.project-button{
+    transition: all 0.3s;
+}
+
+a{
+    padding: none;
+    margin: none;
+}
+
+button{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    border: none;
+    background-color: var(--first-color);
+    border-radius: 1rem;
+    padding: var(--mb-1);
+    align-items: center;
+}
+button p{
+    color: white;
+}
+.icon{
+    font-size: 1.5rem;
+    margin-left: .5rem;
+}
+.show-more-button-div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.show-more-button{
+    background-color: whitesmoke;
+    width: fit-content;
+    transition: all 0.3s;
+}
+.show-more-button p{
+    color: black;
+    margin-right: .5rem;
+}
+.show-more-button .icon{
+    color: black;
+}
+.show-more-button:hover{
+    width: fit-content;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+.show-more-button{
+    color: black;
+}
