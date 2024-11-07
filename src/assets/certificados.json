@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "image": "MIT.svg",
+        "name": "edX Verified Certificate for Introduction to Computer Science and Programming Using Python",
+        "link": "https://courses.edx.org/certificates/ec0f70d152b541f4b7cc09ac8407fd12"
+    },
+    {
+        "id": 2,
+        "image": "meta.svg",
+        "name": "Meta Front-End Developer Specialization",
+        "link": "https://www.coursera.org/account/accomplishments/specialization/HCZ1OXUM63AA"
+    },
+    {
+        "id": 3,
+        "image": "meta.svg",
+        "name": "HTML and CSS in depth",
+        "link": "https://www.coursera.org/account/accomplishments/records/0PUF87GQCT2G"
+    },
+    {
+        "id": 4,
+        "image": "meta.svg",
+        "name": "Version Control",
+        "link": "https://www.coursera.org/account/accomplishments/records/8LIB0H3U28MT"
+    },
+    {
+        "id": 5,
+        "image": "meta.svg",
+        "name": "JavaScript Programming",
+        "link": "https://www.coursera.org/account/accomplishments/records/DNZRYFK98PSD"
+    },
+    {
+        "id": 6,
+        "image": "meta.svg",
+        "name": "Advanced React",
+        "link": "https://www.coursera.org/account/accomplishments/records/KOG7M2MYXZCO"
+    },
+    {
+        "id": 7,
+        "image": "meta.svg",
+        "name": "Principles of UX/UI Design",
+        "link": "https://www.coursera.org/account/accomplishments/records/T1YUGKXEEEU9"
+    }
+]

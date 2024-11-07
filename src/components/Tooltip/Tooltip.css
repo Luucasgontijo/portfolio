@@ -15,7 +15,8 @@
   left: 50%;
   margin-left: -60px;
   opacity: 0;
-  font-weight: var(--font-thin);
+  font-size: 1rem;
+  font-weight: var(--font-superthin);
   transition: opacity 1s; 
 }
 

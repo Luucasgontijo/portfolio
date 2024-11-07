@@ -1,0 +1,37 @@
+.certificate-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate-card{
+    display: flex;
+    gap: 1rem;
+    align-self: start;
+    align-items: top;
+    margin-bottom: 1rem;
+
+    h2 {
+        position: relative;
+        display: inline-block; /* Inline-block keeps the underline just under the text */
+        cursor: pointer;
+        font-size: var(--h2-font-size);
+
+      }
+      
+    h2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px; /* Adjust this for the thickness of the underline */
+        background-color: var(--first-color); /* Set your desired color */
+        transition: width 1s ease; /* Adjust the duration and easing */
+      }
+      
+      h2:hover::after {
+        width: 100%;
+      }
+
+}
+

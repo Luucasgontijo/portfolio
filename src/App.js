@@ -7,7 +7,8 @@ import Header from './components/Header/Header';
 import './App.css';
 import './index.css';
 import Tooltip from './components/Tooltip/Tooltip'; 
-import ScrollToTop from './components/scrollToTop/scrollToTop'; // Aj
+import ScrollToTop from './components/scrollToTop/scrollToTop'; 
+import Certificates from './components/Certificates/Certificates';
 
 import { faEnvelope, faSquarePhone, faCopy } from '@fortawesome/free-solid-svg-icons';
 
@@ -77,18 +78,19 @@ function App() {
         
 
         <div className="medias">
-          <div>
+          <div className='icon-container'>
               <a target='blank' href='https://github.com/Luucasgontijo'>
               <FontAwesomeIcon  icon={faGithub}  title='Abrir no Github' className='icon'/> 
               </a>
           </div>
-          <div>
+          <div  className='icon-container'>
             <a href='https://www.linkedin.com/in/lucas-gontijo-6887b92b3/' target='blank'>
             <FontAwesomeIcon icon={faLinkedin} title='Abrir no Linkedin' className='icon' />
             </a>
           </div>
           <a className='contato contato-main' href="#contato" onClick={(e) => handleClick(e, 'contato')}>Contato</a>
         </div>
+
         <div className="about-container">
           <h1 className='section-title' id="sobre"> Sobre mim </h1>
           <div className="about">
@@ -106,7 +108,7 @@ function App() {
           <Tooltip text="HTML5">
                 <FontAwesomeIcon icon={faHtml5} className='skills-logo html5-icon' />
               </Tooltip>
-              <Tooltip text="CSS3">
+              <Tooltip text="CSS3" className='tooltip'>
                 <FontAwesomeIcon icon={faCss3Alt} className='skills-logo' />
               </Tooltip>
               <Tooltip text="JavaScript">
@@ -131,63 +133,8 @@ function App() {
           </div>
         </div>
       </div> 
-      <div className='certificates'>
-        <h1 className='section-title' id="projetos">Minhas certificações</h1> 
-        <div className='certificate-container'>
-        <div className='img-container'>
-              <img src='./MIT.svg'  className='certificate-img' /> 
-          </div>
-            
-            <a href='https://courses.edx.org/certificates/ec0f70d152b541f4b7cc09ac8407fd12' target='blank'><h2>edX Verified Certificate for Introduction to Computer Science and Programming Using Python</h2> </a>
-        </div>
-        
-        <div className='certificate-container'>
-          <div className='img-container'>
-              <img src='./meta.svg'  className='certificate-img' /> 
-          </div>
-            
-            <a href='https://www.coursera.org/account/accomplishments/specialization/HCZ1OXUM63AA' target='blank'><h2>Meta Front-End Developer Specialization</h2> </a>
-        </div>
-       
-        <div className='certificate-container'>
-          <div className='img-container'>
-              <img src='./meta.svg'  className='certificate-img' /> 
-          </div>
-            
-            <a href='https://www.coursera.org/account/accomplishments/records/0PUF87GQCT2G' target='blank'><h2>HTML and CSS in depth</h2> </a>
-        </div>
-        <div className='certificate-container'>
-          <div className='img-container'>
-              <img src='./meta.svg'  className='certificate-img' /> 
-          </div>
-            
-            <a href='https://www.coursera.org/account/accomplishments/records/8LIB0H3U28MT' target='blank'><h2>Version Control</h2> </a>
-        </div>
-        <div className='certificate-container'>
-          <div className='img-container'>
-              <img src='./meta.svg'  className='certificate-img' /> 
-          </div>
-            
-            <a href='https://www.coursera.org/account/accomplishments/records/DNZRYFK98PSD' target='blank'><h2>JavaScript Programming </h2> </a>
-        </div>
-        <div className='certificate-container'>
-          <div className='img-container'>
-              <img src='./meta.svg'  className='certificate-img' /> 
-          </div>
-            
-            <a href='https://www.coursera.org/account/accomplishments/records/KOG7M2MYXZCO' target='blank'><h2>Advanced React </h2> </a>
-        </div>
-        <div className='certificate-container'>
-          <div className='img-container'>
-              <img src='./meta.svg'  className='certificate-img' /> 
-          </div>
-            
-            <a href='https://www.coursera.org/account/accomplishments/records/T1YUGKXEEEU9' target='blank'><h2>Principles of UX/UI Design </h2> </a>
-        </div>
-       
-        
-      </div>
-      
+      <Certificates/>
+  
       </div>   
       <div className="Projects">
         

@@ -4,7 +4,7 @@
     font-family: var(--body-font);
     text-decoration: none;
     color: var(--second-color);
-    font-weight: var(--font-thin);
+    font-weight: var(--font-superthin);
     font-size: var(--normal-font-size);
     margin: 0px 0px;
     overflow-x: hidden;
@@ -38,10 +38,10 @@ h1:not(#logo){
 }
 h2, span{
   font-size: var(--h2-font-size);
-  font-weight: var(--font-semi);
+  font-weight: var(--font-superthin);
 
   span{
-    font-weight: var(--font-bold);
+    font-weight: var(--font-thin);
   }
 }
   
@@ -82,20 +82,19 @@ h2, span{
 .medias {
   display: flex;
   justify-content: start;
-  align-items: center;
   gap: 1rem;
-  margin: var(--mb-3) 0px;
 
   /* for proper hover effect */
-  div{
+  .icon-container {
     justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 3rem;
     height: 3rem;
   
 
   .icon {
     font-size: var(--big-font-size);
-    color: var(--first-color);
     transition: all 0.3s ease-in;
 
     &:hover{
@@ -118,6 +117,8 @@ h2, span{
 .section-title {
   margin: var(--mb-3) 0px;
   text-align: center;
+  text-decoration: underline var(--first-color) .8rem;
+  margin-bottom: 1rem;
 }
 
 /* *****====== carousel related css ======***** */
@@ -170,10 +171,12 @@ h2, span{
   margin: 0 40px;
   
 }
+
 .logos-slide svg{
   padding-top: 40px;
   width: 3.5rem;
 }
+
 
 .certificate-container {
   display: flex;
@@ -181,7 +184,10 @@ h2, span{
   justify-content: start;
   margin: 1rem 0px;
   
-  
+  a{
+    align-items: center;
+    text-align: center;
+  }
 }
 .certificate-container .img-container {
   margin: 1rem 3rem;
@@ -195,7 +201,7 @@ h2, span{
 
 .certificates h2{
   font-size: var(--h2-font-size);
-  font-weight: var(--font-thin);
+  font-weight: var(--font-superthin);
   color: var(--second-color);
 }
 
@@ -415,6 +421,8 @@ font-weight: 300;
 
   
 }
+
+
 
 
 
