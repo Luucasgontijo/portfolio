@@ -14,8 +14,12 @@
         position: relative;
         display: inline-block; /* Inline-block keeps the underline just under the text */
         cursor: pointer;
-        font-size: var(--h2-font-size);
-
+        font-size: var(--h2-font-size); /* Or a specific width, like 300px */
+        overflow: hidden;
+        width: 80vw;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: start;
       }
       
     h2::after {
@@ -35,3 +39,18 @@
 
 }
 
+
+@media (max-width: 692px){
+    .certificate-card{
+        align-self: center;
+    }
+}
+
+.ArrowDown{
+  width: .8rem;
+}
+
+.github{
+  margin-left: .5rem;
+  width: 1.5rem;
+}
