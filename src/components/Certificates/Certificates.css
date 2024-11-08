@@ -14,11 +14,8 @@
         position: relative;
         display: inline-block; /* Inline-block keeps the underline just under the text */
         cursor: pointer;
-        font-size: var(--h2-font-size); /* Or a specific width, like 300px */
+        font-size: clamp(.5rem, var(--h2-font-size), 3rem);
         overflow: hidden;
-        width: 80vw;
-        white-space: nowrap;
-        text-overflow: ellipsis;
         text-align: start;
       }
       
@@ -45,6 +42,27 @@
         align-self: center;
     }
 }
+
+@media (max-width: 1440px){
+    .certificate-card{
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+}
+@media (max-width: 1210px){
+    .certificate-card{
+      h2{ 
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 78vw; 
+      }}}
+      h2:hover::after{ 
+        display: none;
+      }
+
+
 
 .ArrowDown{
   width: .8rem;

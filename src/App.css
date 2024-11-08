@@ -31,11 +31,15 @@ main {
 }
 
 /* determina o tamanho de fonte dos h1, com excessão do h1 do logo (header) */
-h1:not(#logo){
+h1:not(#contato):not(#logo) {
   font-size: var(--big-font-size);
   font-weight: var(--font-bold);
   font-family: 'Bona+Nova';
-  
+}
+.section-title { 
+  font-size: var(--big-font-size);
+  font-weight: var(--font-bold);
+  font-family: 'Bona+Nova';
 }
 h2, span{
   font-size: var(--h2-font-size);
@@ -119,6 +123,7 @@ h2, span{
   user-select: none;
   text-align: center;
   margin-bottom: var(--mb-4);
+  margin-top: var(--mb-3);
   text-decoration: underline var(--first-color);
   text-underline-offset: .4rem;
   text-decoration-thickness: .2rem;
