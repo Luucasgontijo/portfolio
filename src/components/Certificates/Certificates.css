@@ -57,10 +57,14 @@
       overflow: hidden;
       text-overflow: ellipsis;
       width: 78vw; 
-      }}}
+      }
+
       h2:hover::after{ 
         display: none;
       }
+    
+    }}
+      
 
 
 
