@@ -49,7 +49,7 @@ function Header() {
     localStorage.setItem('theme', newTheme); // Save theme preference
     updateCSSVariables(newTheme);
     setIsLogosActive(!isLogosActive);
-    window.location.reload();
+    // window.location.reload();
   };
   
 

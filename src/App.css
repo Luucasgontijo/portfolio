@@ -1,5 +1,26 @@
 /* === general css === */
 
+:root {
+  --hue-color: 224;
+  --first-color: hsl(var(--hue-color), 90%, 65%);
+  --second-color: hsl(var(--hue-color), 0%, 15%);
+  --header-color: hsl(0, 0%, 100%);
+  --third-color: hsl(var(--hue-color), 0%, 55%);
+  --gray-color: hsl(var(--hue-color), 0%, 95%);
+}
+
+body.dark-theme {
+  --second-color: white;
+  --header-color: black;
+  --gray-color: hsl(224, 0%, 15%);
+}
+
+body.light-theme {
+  --second-color: black;
+  --header-color: white;
+  --gray-color: hsl(224, 0%, 95%);
+}
+
 * {
     font-family: var(--body-font);
     text-decoration: none;
