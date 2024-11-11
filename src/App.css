@@ -4,25 +4,24 @@
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 90%, 65%);
   --second-color: hsl(var(--hue-color), 0%, 15%);
-  --header-color: hsl(0, 0%, 100%);
-  --third-color: hsl(var(--hue-color), 0%, 55%);
+  --third-color: hsl(0, 0%, 100%);
   --gray-color: hsl(var(--hue-color), 0%, 95%);
 }
 
 body.dark-theme {
   --second-color: white;
-  --header-color: black;
+  --third-color: black;
   --gray-color: hsl(224, 0%, 15%);
 }
 
 body.light-theme {
   --second-color: black;
-  --header-color: white;
+  --third-color: white;
   --gray-color: hsl(224, 0%, 95%);
 }
 
 .greeting {
-  background-color: var(--header-color);
+  background-color: var(--third-color);
   color: var(--second-color);
 }
 
@@ -32,66 +31,63 @@ body.light-theme {
 }
 
 * {
-    font-family: var(--body-font);
-    text-decoration: none;
-    color: var(--second-color);
-    font-weight: var(--font-superthin);
-    font-size: var(--normal-font-size);
-    margin: 0px 0px;
-    overflow-x: hidden;
-
-  }
-
-
+  font-family: var(--body-font);
+  text-decoration: none;
+  color: var(--second-color);
+  font-weight: var(--font-superthin);
+  font-size: var(--normal-font-size);
+  margin: 0px 0px;
+  overflow-x: hidden;
+}
 
 /* === main css === */
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    justify-content: space-evenly;
-    min-height: 100vh; /*for the main part takes at least all the vertical screen space*/
-    position: absolute;
-    width: clamp(300px, 100vw, 100vw);
-    top: var(--header-height); /*defined in index.css*/
-    z-index: var(--z-back);
-    padding: var(--mb-1) var(--mb-4);
-    /* thats some scroll related css */
-    overflow: auto;
-    scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-evenly;
+  min-height: 100vh; /*for the main part takes at least all the vertical screen space*/
+  position: absolute;
+  width: clamp(300px, 100vw, 100vw);
+  top: var(--header-height); /*defined in index.css*/
+  z-index: var(--z-back);
+  padding: var(--mb-1) var(--mb-4);
+  /* thats some scroll related css */
+  overflow: auto;
+  scrollbar-width: none;
 }
 
 /* determina o tamanho de fonte dos h1, com excessão do h1 do logo (header) */
 h1:not(#contato):not(#logo) {
   font-size: var(--big-font-size);
   font-weight: var(--font-bold);
-  font-family: 'Bona+Nova';
+  font-family: "Bona+Nova";
 }
-.section-title { 
+.section-title {
   font-size: var(--big-font-size);
   font-weight: var(--font-bold);
-  font-family: 'Bona+Nova';
+  font-family: "Bona+Nova";
 }
-h2, span{
+h2,
+span {
   font-size: var(--h2-font-size);
   font-weight: var(--font-superthin);
 
-  span{
+  span {
     font-weight: var(--font-thin);
   }
 }
-  
 
 /* === .presentation div (contains greeting and my photo) === */
 .presentation {
   margin: var(--mb-4) 0px;
   display: flex;
   align-items: center;
-  justify-content: space-between ;
+  justify-content: space-between;
 }
 
 /* ====== left section of .presentation div (greeting text) ====== */
-.greeting{
+.greeting {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -100,19 +96,15 @@ h2, span{
   -webkit-user-select: none; /* Safari e Chrome */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE e Edge */
-  
 }
 
 /* ==== my face related ==== */
-.face-container, 
-.face-container img{
+.face-container,
+.face-container img {
   flex: none;
   width: clamp(450px, 35vw, 40vw);
   height: auto;
 }
-
-
-
 
 /* ====== div containing the social medias -> git and linkdin ====== */
 .medias {
@@ -127,26 +119,20 @@ h2, span{
     text-align: center;
     width: 3rem;
     height: 3rem;
-  
 
-  .icon {
-    font-size: var(--big-font-size);
-    transition: all 0.3s ease-in;
+    .icon {
+      font-size: var(--big-font-size);
+      transition: all 0.3s ease-in;
 
-    &:hover{
-      scale: 1.05;
-      transition: all 0.3s ease-out;
-      opacity: 0.8; 
-      cursor: pointer;
+      &:hover {
+        scale: 1.05;
+        transition: all 0.3s ease-out;
+        opacity: 0.8;
+        cursor: pointer;
       }
     }
   }
 }
-
-
-
-
-
 
 /* === css for the title of each topic on page ===  */
 
@@ -156,9 +142,8 @@ h2, span{
   margin-bottom: var(--mb-4);
   margin-top: var(--mb-3);
   text-decoration: underline var(--first-color);
-  text-underline-offset: .4rem;
-  text-decoration-thickness: .2rem;
-
+  text-underline-offset: 0.4rem;
+  text-decoration-thickness: 0.2rem;
 }
 
 /* *****====== carousel related css ======***** */
@@ -209,22 +194,20 @@ h2, span{
 .logos-slide .skills-logo {
   height: 50px;
   margin: 0 40px;
-  
 }
 
-.logos-slide svg{
+.logos-slide svg {
   padding-top: 40px;
   width: 3.5rem;
 }
-
 
 .certificate-container {
   display: flex;
   align-items: center;
   justify-content: start;
   margin: 1rem 0px;
-  
-  a{
+
+  a {
     align-items: center;
     text-align: center;
   }
@@ -236,10 +219,9 @@ h2, span{
   justify-content: start;
   width: 3rem;
   height: 3rem;
-
 }
 
-.certificates h2{
+.certificates h2 {
   font-size: var(--h2-font-size);
   font-weight: var(--font-superthin);
   color: var(--second-color);
@@ -264,7 +246,7 @@ h2, span{
   gap: 1rem;
   margin: var(--mb-3) 0px;
 }
-.contact-ways{
+.contact-ways {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,13 +259,12 @@ h2, span{
   bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
-  
+
   background-color: #333;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
-
 }
 
 .contact-container {
@@ -291,73 +272,66 @@ h2, span{
   justify-content: start;
   align-items: center;
   text-align: center;
-  gap: .4rem;
+  gap: 0.4rem;
   margin: var(--mb-1) 0px;
 }
-.contact-container a{
+.contact-container a {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
- 
 }
-.contact-container .copy{
+.contact-container .copy {
   font-size: 1.125rem;
   cursor: pointer;
-
 }
 
-.contact-container .whatsapp-icon{
+.contact-container .whatsapp-icon {
   font-size: 1.3rem;
   cursor: pointer;
 }
 
-.text-info{
+.text-info {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
-  
-
 }
 
-h3{
-
-font-weight: 300;
+h3 {
+  font-weight: 300;
 }
-
 
 .scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    cursor: pointer;
-    z-index: 1000;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
 }
 
 .circle {
-    width: 50px; /* Ajuste o tamanho conforme necessário */
-    height: 50px;
-    background-color: #007bff; /* Cor da bola */
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
+  width: 50px; /* Ajuste o tamanho conforme necessário */
+  height: 50px;
+  background-color: #007bff; /* Cor da bola */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
 }
 
 .circle:hover {
-    background-color: #0056b3; /* Cor ao passar o mouse */
+  background-color: #0056b3; /* Cor ao passar o mouse */
 }
 
 .arrow {
-    font-size: 20px; /* Ajuste o tamanho da seta */
-    color: white; /* Cor da seta */
+  font-size: 20px; /* Ajuste o tamanho da seta */
+  color: white; /* Cor da seta */
 }
 /* +====== MEDIA QUERIES ======+ */
-
 
 /* Tablet/Cellphone  */
 @media (max-width: 692px) {
@@ -365,15 +339,13 @@ font-weight: 300;
     position: absolute;
     width: 100vw;
     top: var(--alternative-header-height);
-    padding:  var(--mb-1) ;
+    padding: var(--mb-1);
   }
   .medias {
     margin-top: 2rem;
     margin-bottom: 2rem;
     justify-content: space-evenly;
   }
-  
-
 
   .contact {
     display: flex;
@@ -383,79 +355,59 @@ font-weight: 300;
     gap: 1rem;
     margin: var(--mb-3) 0px;
   }
-  .contact-ways{
-    margin: 0px 0px ;
+  .contact-ways {
+    margin: 0px 0px;
   }
-  
-
 }
 
 @media (max-width: 500px) {
-  .presentation h2, .presentation span{
+  .presentation h2,
+  .presentation span {
     font-size: var(--big-font-size);
   }
-  
 }
-
 
 /* Desktop  */
 
 @media (max-width: 1025px) {
-  
-
-  .about h2{
+  .about h2 {
     font-size: var(--normal-font-size);
     font-weight: var(--font-thin);
     color: var(--second-color);
     text-align: center;
   }
-  .about span{
+  .about span {
     font-size: var(--normal-font-size);
     font-weight: var(--font-bold);
     color: var(--second-color);
-}
-  
-  .presentation{
+  }
+
+  .presentation {
     flex-direction: column;
     text-align: center;
-
   }
-  
+
   .medias {
     margin-top: 2rem;
     margin-bottom: 2rem;
     /* justify-content: space-between; */
   }
-  .contato-main{
+  .contato-main {
     display: none;
   }
-
-  
 
   .certificate-container {
     display: flex;
     align-items: center;
     justify-content: start;
     margin: var(--mb-1) 0px;
-    
-    
   }
   .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .contact-ways{
-    margin: 0px 0px ;
+  .contact-ways {
+    margin: 0px 0px;
   }
-
-
-
-  
 }
-
-
-
-
-
-

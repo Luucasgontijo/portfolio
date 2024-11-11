@@ -11,48 +11,19 @@ function Header() {
 
   const [theme, setTheme] = useState('light-theme');
 
-  useEffect(() => {
-    // Check for saved theme in localStorage
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      setTheme(savedTheme);
-      document.body.classList.add(savedTheme);
-      updateCSSVariables(savedTheme);
-    } else {
-      document.body.classList.add('light-theme');
-      updateCSSVariables('light-theme');
-    }
-  }, []);
 
-  const updateCSSVariables = (theme) => {
-    const root = document.documentElement;
-    if (theme === 'light-theme') {
-      root.style.setProperty('--second-color', 'black');
-      root.style.setProperty('--header-color', 'white');
-      root.style.setProperty('--gray-color', 'hsl(224, 0%, 95%)');
-
-
-      // root.style.setProperty('--header-text-color', 'black');
-    } else {
-      root.style.setProperty('--second-color', 'white');
-      root.style.setProperty('--header-color', 'black');
-      root.style.setProperty('--gray-color', 'hsl(224, 0%, 15%)');
-      // root.style.setProperty('--header-text-color', 'white');
-    }
-  };
-  const [isLogosActive, setIsLogosActive] = useState(false);
   const toggleTheme = () => {
     const newTheme = theme === 'light-theme' ? 'dark-theme' : 'light-theme';
     setTheme(newTheme);
     document.body.classList.remove('light-theme', 'dark-theme');
     document.body.classList.add(newTheme);
     localStorage.setItem('theme', newTheme); // Save theme preference
-    updateCSSVariables(newTheme);
-    setIsLogosActive(!isLogosActive);
+    // updateCSSVariables(newTheme);
+    // setIsLogosActive(!isLogosActive);
 
-    if (window.matchMedia("(max-width: 1080px)").matches) {
-      window.location.reload(); // Reload the page if the device is a cellphone
-    }
+    // if (window.matchMedia("(max-width: 1080px)").matches) {
+    //   window.location.reload(); // Reload the page if the device is a cellphone
+    // }
     
   };
   

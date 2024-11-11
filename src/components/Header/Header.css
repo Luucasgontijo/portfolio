@@ -7,8 +7,6 @@
   font-size: var(--normal-font-size);
   margin: 0px 0px;
   box-sizing: border-box;
-  
-
 }
 
 /* ****====== header effects ======**** */
@@ -22,7 +20,7 @@ header {
   align-items: center;
   padding: 0px 2rem;
   border-bottom: 1px solid var(--gray-color);
-  background-color: var(--header-color);
+  background-color: var(--third-color);
 
   /* === for disabling text selection when click and drag (for header text)=== */
   user-select: none; /* Navegadores modernos */
@@ -46,13 +44,13 @@ header nav {
   align-items: center;
   list-style: none;
 }
-header nav li{
+header nav li {
   display: flex;
   width: 9vw;
   justify-content: center;
   align-items: center;
 }
-header nav li a{
+header nav li a {
   transition: all 0.3s ease-in;
 }
 header nav li a:hover {
@@ -65,40 +63,38 @@ header nav li a:hover {
 }
 
 /* === contact button adjusts ===   */
-.contato{
+.contato {
   color: white;
   background-color: var(--first-color);
-  padding: .5rem .6rem;
+  padding: 0.5rem 0.6rem;
   border-radius: 1rem;
 }
 /* === for maintein the color of the text inside the button (it would change based on the hover inherit of li ===) */
-.contato:hover{
+.contato:hover {
   color: white;
 }
 
-
 @media (max-width: 1024px) {
   /* === spacing on nav items === */
-  header nav li a{
+  header nav li a {
     display: flex;
 
     font-size: var(--normal-font-size);
   }
   header nav {
-    justify-content: space-around ;
+    justify-content: space-around;
     width: 90vw;
   }
   header nav li {
     width: 25vw;
     text-align: center;
   }
-  a.contato{
+  a.contato {
     background: none;
     padding: none;
     color: var(--second-color);
   }
-  a.contato:hover{
-;
+  a.contato:hover {
     font-size: var(--hover-font-size);
     display: flex;
     justify-content: center;
@@ -110,25 +106,25 @@ header nav li a:hover {
 
 @media (min-width: 320px) and (max-width: 768px) {
   /* === spacing on nav items === */
-  header nav li a{
+  header nav li a {
     display: flex;
 
     font-size: var(--smaller-font-size);
   }
   header nav {
-    justify-content: space-around ;
+    justify-content: space-around;
     width: 90vw;
   }
   header nav li {
     width: 25vw;
     text-align: center;
   }
-  a.contato{
+  a.contato {
     background: none;
     padding: none;
     color: var(--second-color);
   }
-  header a.contato:hover{
+  header a.contato:hover {
     font-size: var(--smaller-font-size);
     display: flex;
     justify-content: center;
@@ -136,7 +132,7 @@ header nav li a:hover {
     transition: all 0.3s ease-out;
     color: var(--first-color);
   }
-  header nav li a:hover{
+  header nav li a:hover {
     font-size: var(--smaller-font-size);
     display: flex;
     justify-content: center;
@@ -146,16 +142,15 @@ header nav li a:hover {
   }
 }
 
-
 @media (max-width: 768px) {
   /* === ---> header on narrow screen ---> logo on top of nav bar === */
   header {
     height: var(--alternative-header-height);
-    align-items: space-between;   
+    align-items: space-between;
     flex-direction: column;
     justify-content: center;
     padding: 0 0;
-    transition: all 0.3s ease-in;  
+    transition: all 0.3s ease-in;
     row-gap: 1rem;
   }
   /* === nav bar distance and spacing adjusts === */
@@ -171,11 +166,9 @@ header nav li a:hover {
   }
   .header.scrolled {
     height: var(--header-height);
-    transition: all 0.3s ease-in;   
+    transition: all 0.3s ease-in;
   }
-  
 }
-
 
 /* *****======= dark theme related =======*****  */
 
@@ -195,19 +188,19 @@ header nav li a:hover {
   color: white;
 }
 /* === ---> carousel fade in effect (both sides) toggle=== */
-.dark-theme .logos:before{
+.dark-theme .logos:before {
   background: linear-gradient(to left, rgba(0, 0, 0, 0), black);
 }
 .dark-theme .logos:after {
   background: linear-gradient(to right, rgba(0, 0, 0, 0), black);
 }
 /* === theme-toggle-button (header) === */
-.theme-toggle-button{
+.theme-toggle-button {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 30px;
-  height: 30px;;
+  height: 30px;
   background-color: none;
   padding: 0px 0px;
   cursor: pointer;
@@ -216,17 +209,6 @@ header nav li a:hover {
   transition: all 0.3s ease;
 }
 /* ==== Hover redondo do theme_toggle_button ==== */
-.theme-toggle-button:hover{
-  background-color: var(--gray-color)
+.theme-toggle-button:hover {
+  background-color: var(--gray-color);
 }
-
-
-
-
-
-
-
-
-
-
-
