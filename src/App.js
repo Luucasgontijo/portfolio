@@ -51,7 +51,7 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <div className="presentation">
+        <section className="presentation">
         <div className="greeting">
           <h1>Seja bem vindo ao meu portfolio.</h1>
           <h1> Me chamo Lucas, sou</h1>
@@ -63,7 +63,7 @@ function App() {
         </div>
         
 
-        </div>
+        </section>
 
         <div className="medias">
           <div className='icon-container'>
