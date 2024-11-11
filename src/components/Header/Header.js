@@ -49,7 +49,11 @@ function Header() {
     localStorage.setItem('theme', newTheme); // Save theme preference
     updateCSSVariables(newTheme);
     setIsLogosActive(!isLogosActive);
-    // window.location.reload();
+
+    if (window.matchMedia("(max-width: 1080px)").matches) {
+      window.location.reload(); // Reload the page if the device is a cellphone
+    }
+    
   };
   
 

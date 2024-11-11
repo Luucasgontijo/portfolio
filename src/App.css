@@ -21,6 +21,16 @@ body.light-theme {
   --gray-color: hsl(224, 0%, 95%);
 }
 
+.greeting {
+  background-color: var(--header-color);
+  color: var(--second-color);
+}
+
+.some-div {
+  background-color: var(--gray-color);
+  color: var(--second-color);
+}
+
 * {
     font-family: var(--body-font);
     text-decoration: none;
