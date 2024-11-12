@@ -20,15 +20,8 @@ body.light-theme {
   --gray-color: hsl(224, 0%, 95%);
 }
 
-.presentation {
-  background-color: var(--third-color);
-  color: var(--second-color);
-}
 
-.some-div {
-  background-color: var(--gray-color);
-  color: var(--second-color);
-}
+
 
 * {
   font-family: var(--body-font);
@@ -159,7 +152,7 @@ span {
 
 .logos {
   overflow: hidden;
-  background: white;
+
   white-space: nowrap;
   position: relative;
 }

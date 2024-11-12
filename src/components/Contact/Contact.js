@@ -12,6 +12,9 @@ import {
   faCopy,
 } from "@fortawesome/free-solid-svg-icons";
 
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+
+
 const Contact = () => {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -39,7 +42,30 @@ const Contact = () => {
         <button type="submit">Enviar</button>
       </form>
 
-      <div className="contact-ways">
+      <div className="contact-info"></div>
+      <div className="contact-info">
+
+      
+      <FontAwesomeIcon
+              icon={faEnvelope}
+              title="Copiar Email"
+              className="icon"
+              onClick={handleCopyEmail}
+            />
+        <h3>gontijo@discente.ufg.br </h3>
+        <FontAwesomeIcon icon={faLocationDot} />
+        <h3>Goiânia, Goiás, Brasil</h3>
+        <FontAwesomeIcon icon={faSquareWhatsapp} />
+        <h3>+55 (62) 98537-2793</h3>
+        </div>
+      </div>
+  );
+};
+
+export default Contact;
+
+
+{/* <div className="contact-ways">
         <div className="medias medias-bottom">
           <div>
             <a target="blank" href="https://github.com/Luucasgontijo">
@@ -83,38 +109,20 @@ const Contact = () => {
             />
           </div>
         </div>
-      </div>
-      <div className="text-info">
-        <div className="contact-container">
-          <FontAwesomeIcon
-            icon={faCopy}
-            title="Copiar Email"
-            className="copy"
-            onClick={handleCopyEmail}
-          />
-          {showPopup && (
-            <div className="popup">
-              Email copiado para caixa de transferência
-            </div>
-          )}
-          <h3>gontijo@discente.ufg.br</h3>
-        </div>
+      </div> */}
 
-        <h3>Goiânia, Goiás, Brasil</h3>
 
-        <div className="contact-container">
-          <a target="blank" href="https://wa.me/5562985372793">
-            <FontAwesomeIcon
-              icon={faSquareWhatsapp}
-              className="whatsapp-icon"
-            />
-          </a>
-
-          <h3>+55 (62) 98537-2793</h3>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Contact;
+    //   <div className="contact-container">
+    //   <FontAwesomeIcon
+    //     icon={faCopy}
+    //     title="Copiar Email"
+    //     className="copy"
+    //     onClick={handleCopyEmail}
+    //   />
+    //   {showPopup && (
+    //     <div className="popup">
+    //       Email copiado para caixa de transferência
+    //     </div>
+    //   )}
+    //   <h3>gontijo@discente.ufg.br</h3>
+    // </div>

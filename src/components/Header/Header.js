@@ -28,16 +28,16 @@ function Header() {
   };
   
 
-    useEffect(() => {
-        // Check for saved theme in localStorage
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            setTheme(savedTheme);
-            document.body.classList.add(savedTheme);
-        } else {
-            document.body.classList.add('light-theme');
-        }
-    }, []);
+    // useEffect(() => {
+    //     // Check for saved theme in localStorage
+    //     const savedTheme = localStorage.getItem('theme');
+    //     if (savedTheme) {
+    //         setTheme(savedTheme);
+    //         document.body.classList.add(savedTheme);
+    //     } else {
+    //         document.body.classList.add('light-theme');
+    //     }
+    // }, []);
 
    
 
