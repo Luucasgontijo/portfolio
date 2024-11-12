@@ -95,7 +95,7 @@ span {
 .face-container,
 .face-container img {
   flex: none;
-  width: clamp(450px, 35vw, 40vw);
+  width: clamp(350px, 35vw, 40vw);
   height: auto;
 }
 
