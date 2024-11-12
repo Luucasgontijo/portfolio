@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 
+.certificate-img{
+  width: clamp(30px, 2.4rem, 3rem);
+}
+
 .certificate-card{
     display: flex;
     gap: 1rem;
@@ -64,6 +68,13 @@
       }
     
     }}
+
+@media (max-width: 464px){
+    .certificate-img{
+        display: none;
+    }
+  
+}
       
 
 
