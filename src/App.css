@@ -20,7 +20,7 @@ body.light-theme {
   --gray-color: hsl(224, 0%, 95%);
 }
 
-.greeting {
+.presentation {
   background-color: var(--third-color);
   color: var(--second-color);
 }
