@@ -2,14 +2,11 @@ import { React, useState } from "react";
 import "./Contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faLinkedin,
   faSquareWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
 import {
   faEnvelope,
-  faSquarePhone,
-  faCopy,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
@@ -24,7 +21,7 @@ const Contact = () => {
       setShowPopup(true);
       setTimeout(() => {
         setShowPopup(false);
-      }, 2000); // Esconde o popup após 2 segundos
+      }, 200000000); // Esconde o popup após 2 segundos
     });
   };
   return (
@@ -50,11 +47,11 @@ const Contact = () => {
               icon={faEnvelope}
               title="Copiar Email"
               className="icon"
-              onClick={handleCopyEmail}
             />
-        <h3>gontijo@discente.ufg.br </h3>
+        <h3 onClick={handleCopyEmail}>gontijo@discente.ufg.br </h3>
         <FontAwesomeIcon icon={faLocationDot} />
         <h3>Goiânia, Goiás, Brasil</h3>
+              
         <FontAwesomeIcon icon={faSquareWhatsapp} />
         <h3>+55 (62) 98537-2793</h3>
         </div>
