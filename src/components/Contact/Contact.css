@@ -105,3 +105,25 @@ input {
     width: 90%;
   }
 }
+
+
+  /* Customize the form container */
+  .w3forms-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  /* Customize the submit button */
+  .w3forms-submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .w3forms-submit-button:hover {
+    background-color: #0056b3;
+  }

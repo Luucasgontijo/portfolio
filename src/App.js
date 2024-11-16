@@ -49,62 +49,66 @@ function App() {
 
   return (
     <div className="App">
+
       <Header />
+
       <main>
-        <section className="presentation">
-        <div className="greeting">
-          <h1>Seja bem vindo ao meu portfolio.</h1>
-          <h1> Me chamo Lucas, sou</h1>
-          <h1>desenvolvedor front-end.</h1>
-        </div>
 
-        <div className='face-container'>
-          <img  src="/face7.png"/>
-        </div>
-        
+            <section className="presentation">
+            <div className="greeting">
+              <h1>Seja bem vindo ao meu portfolio.</h1>
+              <h1> Me chamo Lucas, sou</h1>
+              <h1>desenvolvedor front-end.</h1>
+            </div>
 
-        </section>
+            <div className='face-container'>
+              <img  src="/face7.png"/>
+            </div>
+            
 
-        <div className="medias">
-          <div className='icon-container'>
-              <a target='blank' href='https://github.com/Luucasgontijo'>
-              <FontAwesomeIcon  icon={faGithub}  title='Abrir no Github' className='icon'/> 
-              </a>
-          </div>
-          <div  className='icon-container'>
-            <a href='https://www.linkedin.com/in/lucas-gontijo-6887b92b3/' target='blank'>
-            <FontAwesomeIcon icon={faLinkedin} title='Abrir no Linkedin' className='icon' />
-            </a>
-          </div>
-        </div>
-
-        <div className="about-container">
-          <h1 className='section-title' id="sobre"> Sobre mim </h1>
-          <div className="about">
-          
-            <h2>Iniciei minha jornada em Engenharia Elétrica (UFG), no ano de 2023, mas decidi alternar, e ingressei na graduação de <span>Engenharia de Software</span>  (UFG) em Janeiro de 2024. Atualmente, estou focado em desenvolvimento front-end, utilizando tecnologias como <span>React</span>, <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. </h2>
-
-            <h2> Além dessas tecnologias, lido bem com <span>Golang</span>, <span>Node.js</span>, sou familiarizado com a utilização de <span>Linux (SO)</span> , e de  
-            <span> bancos de dados SQL</span>  e estou me  especializando em <span>Python</span>  e aplicações focadas em IA(LLMS).</h2>
-
-          </div>
-        
-      <Carousel/>
-      <h1 className='section-title' id="sobre">Minhas certificações</h1>
-      <Certificates/>
-  
-      </div>   
-        
-        <h1 className='section-title' id="projetos">Meus projetos</h1> 
-        <Projects/>
+            </section>
+            <div className="medias">
+              <div className='icon-container'>
+                  <a target='blank' href='https://github.com/Luucasgontijo'>
+                  <FontAwesomeIcon  icon={faGithub}  title='Abrir no Github' className='icon'/> 
+                  </a>
+              </div>
+              <div  className='icon-container'>
+                <a href='https://www.linkedin.com/in/lucas-gontijo-6887b92b3/' target='blank'>
+                <FontAwesomeIcon icon={faLinkedin} title='Abrir no Linkedin' className='icon' />
+                </a>
+              </div>
+            </div>
 
 
-        <h1 className='section-title' id="contato">Vamos entrar em contato 👋</h1> 
-        <Contact/>
-       
+            <div className="about-container">
+              <h1 className='section-title' id="sobre"> Sobre mim </h1>
+              <div className="about">
+              
+                <h2>Iniciei minha jornada em Engenharia Elétrica (UFG), no ano de 2023, mas decidi alternar, e ingressei na graduação de <span>Engenharia de Software</span>  (UFG) em Janeiro de 2024. Atualmente, estou focado em desenvolvimento front-end, utilizando tecnologias como <span>React</span>, <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. </h2>
+
+                <h2> Além dessas tecnologias, lido bem com <span>Golang</span>, <span>Node.js</span>, sou familiarizado com a utilização de <span>Linux (SO)</span> , e de  
+                <span> bancos de dados SQL</span>  e estou me  especializando em <span>Python</span>  e aplicações focadas em IA(LLMS).</h2>
+
+              </div>
+            
+          <Carousel/>
+          <h1 className='section-title' id="sobre">Minhas certificações</h1>
+          <Certificates/>
+            </div>
+
+
+            <h1 className='section-title' id="projetos">Meus projetos</h1> 
+            <Projects/>
+
+
+            <h1 className='section-title' id="contato">Vamos entrar em contato 👋</h1> 
+            <Contact/>
+
 
 
       </main>
+
       <ScrollToTop></ScrollToTop>
       
     </div>

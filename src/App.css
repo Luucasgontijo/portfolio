@@ -30,7 +30,7 @@ body.light-theme {
   font-weight: var(--font-superthin);
   font-size: var(--normal-font-size);
   margin: 0px 0px;
-  overflow-x: hidden;
+
 }
 
 /* === main css === */
@@ -45,9 +45,8 @@ main {
   top: var(--header-height); /*defined in index.css*/
   z-index: var(--z-back);
   padding: var(--mb-1) var(--mb-4);
-  /* thats some scroll related css */
-  overflow: auto;
-  scrollbar-width: none;
+
+
 }
 
 /* determina o tamanho de fonte dos h1, com excessão do h1 do logo (header) */
@@ -396,4 +395,8 @@ h3 {
   .contact-ways {
     margin: 0px 0px;
   }
+}
+
+a[href^="mailto:"] {
+  text-decoration: none;
 }

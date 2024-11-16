@@ -26,9 +26,11 @@ const Contact = () => {
   };
   return (
     <div className="contact">
-      <form className="contact-form">
+      <form className="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="ff95c1d9-1ba4-4734-9de5-f80d465dba33"/>
         <label htmlFor="name">Nome:</label>
         <input type="text" id="name" name="name" required />
+
 
         <label htmlFor="email">Email:</label>
         <input type="email" id="email" name="email" required />
