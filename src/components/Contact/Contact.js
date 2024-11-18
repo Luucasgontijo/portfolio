@@ -16,12 +16,12 @@ const Contact = () => {
   const [showPopup, setShowPopup] = useState(false);
 
   const handleCopyEmail = () => {
-    const email = "gontijo@discente.ufg.br";
+    const email = 'gontijo@discente.ufg.br';
     navigator.clipboard.writeText(email).then(() => {
       setShowPopup(true);
       setTimeout(() => {
         setShowPopup(false);
-      }, 200000000); // Esconde o popup após 2 segundos
+      }, 2000); // Hide the popup after 2 seconds
     });
   };
   return (
@@ -41,21 +41,24 @@ const Contact = () => {
         <button type="submit">Enviar</button>
       </form>
 
-      <div className="contact-info"></div>
       <div className="contact-info">
 
       
-      <FontAwesomeIcon
-              icon={faEnvelope}
-              title="Copiar Email"
-              className="icon"
-            />
-        <h3 onClick={handleCopyEmail}>gontijo@discente.ufg.br </h3>
-        <FontAwesomeIcon icon={faLocationDot} />
-        <h3>Goiânia, Goiás, Brasil</h3>
-              
-        <FontAwesomeIcon icon={faSquareWhatsapp} />
-        <h3>+55 (62) 98537-2793</h3>
+      
+      <div>
+            <FontAwesomeIcon icon={faEnvelope} title="Copiar Email" className="icon" />
+            <h3 onClick={handleCopyEmail}>gontijo@discente.ufg.br</h3>
+            {showPopup && <div className="popup">Email copiado para caixa de transferência</div>}
+      </div>
+     <div>
+          <FontAwesomeIcon icon={faLocationDot} />
+          <h3>Goiânia, Goiás, Brasil</h3>
+     </div>
+     <div>
+          <FontAwesomeIcon icon={faSquareWhatsapp} />
+          <h3>+55 (62) 98537-2793</h3>
+     </div>
+     
         </div>
       </div>
   );
