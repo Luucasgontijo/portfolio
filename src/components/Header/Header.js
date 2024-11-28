@@ -18,6 +18,10 @@ function Header() {
     document.body.classList.remove('light-theme', 'dark-theme');
     document.body.classList.add(newTheme);
     localStorage.setItem('theme', newTheme); // Save theme preference
+    document.documentElement.style.opacity = "0.99";
+    setTimeout(() => {
+      document.documentElement.style.opacity = "1";
+    }, 1);
     // updateCSSVariables(newTheme);
     // setIsLogosActive(!isLogosActive);
 
