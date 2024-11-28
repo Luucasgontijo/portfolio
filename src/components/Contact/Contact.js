@@ -1,10 +1,9 @@
 import { React, useState } from "react";
 import "./Contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSquareWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
 
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
@@ -53,11 +52,22 @@ const Contact = () => {
      <div>
           <FontAwesomeIcon icon={faLocationDot} />
           <h3>Goiânia, Goiás, Brasil</h3>
+          
      </div>
-     <div>
+
+
+              <div >
+                  <a target='blank' href='https://github.com/Luucasgontijo'>
+                  <FontAwesomeIcon  icon={faGithub}  title='Abrir no Github' className='icon'/> 
+                  </a>
+                  <a href='https://www.linkedin.com/in/lucas-gontijo-6887b92b3/' target='blank'>
+                <FontAwesomeIcon icon={faLinkedin} title='Abrir no Linkedin' className='icon' />
+                </a>
+              </div>
+     {/* <div>
           <FontAwesomeIcon icon={faSquareWhatsapp} />
           <h3>+55 (62) 98537-2793</h3>
-     </div>
+     </div> */}
      
         </div>
       </div>

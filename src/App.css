@@ -70,6 +70,13 @@ span {
   }
 }
 
+h5{
+  user-select: none;
+  text-align: center;
+  font-size: var(--h5-font-size);
+  font-weight: var(--font-superthin);
+}
+
 /* === .presentation div (contains greeting and my photo) === */
 .presentation {
   margin: var(--mb-4) 0px;

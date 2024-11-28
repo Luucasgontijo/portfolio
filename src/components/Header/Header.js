@@ -74,7 +74,7 @@ function Header() {
       </h1>
       <nav>
           <li><a href="#sobre" onClick={(e) => handleClick(e, 'sobre')}>Sobre</a></li>
-          <li><a href="#projetos" onClick={(e) => handleClick(e, 'projetos')}>Projetos</a></li>
+          {/* <li><a href="#projetos" onClick={(e) => handleClick(e, 'projetos')}>Projetos</a></li> */}
           <li><a className='contato' href="#contato" onClick={(e) => handleClick(e, 'contato')}>Contato</a></li>
             <li>
               <div onClick={toggleTheme}  title='mudar tema' className="theme-toggle-button">
