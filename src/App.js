@@ -85,10 +85,10 @@ function App() {
               <h1 className='section-title' id="sobre"> Sobre mim </h1>
               <div className="about">
               
-                <h2>Iniciei minha jornada em Engenharia Elétrica (UFG), no ano de 2023, mas decidi alternar, e ingressei na graduação de <span>Engenharia de Software</span>  (UFG) em Janeiro de 2024. Atualmente, estou focado em desenvolvimento front-end, utilizando tecnologias como <span>React</span>, <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. </h2>
+                <h2>Ingressei na graduação de <span>Engenharia de Software(Universidade Federal de Goiás) </span> em Janeiro de 2024. Atualmente, estou focado em desenvolvimento front-end, utilizando tecnologias como <span>React</span>, <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. </h2>
 
                 <h2> Além dessas tecnologias, lido bem com <span>Golang</span>, <span>Node.js</span>, sou familiarizado com a utilização de <span>Linux (SO)</span> , e de  
-                <span> bancos de dados SQL</span>  e estou me  especializando em <span>Python</span>  e aplicações focadas em IA(LLMS).</h2>
+                <span> bancos de dados SQL</span>  e estou me  especializando no desenvolvimento utilizando <span>Python</span> e aplicações focadas em IA(LLMS), no momento, também atuo em um projeto de extensão universitário Federal, na seção de Inteligência Artificial, e no desenvolvimento de uma solução Retrieval-Augmented Generation (RAG) para a aplicação que desenvolvemos utilizando tecnologias baseadas em <span>langchain</span> </h2>
 
               </div>
             

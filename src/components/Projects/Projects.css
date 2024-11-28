@@ -1,8 +1,16 @@
 .projects-list{
     display: grid;
+
+    width: 80vw;
     grid-template-columns: repeat(2, 1fr);
 }
 
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .card{
     color: white;
@@ -12,7 +20,7 @@
     border-radius: 1rem;
     transition: all 0.3s;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-    min-width: clamp(5rem, 5 rem, 10rem);
+    min-width: clamp(3rem, 3 rem, 10rem);
 }
 .card:hover{
     scale: 1.01;

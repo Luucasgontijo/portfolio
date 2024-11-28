@@ -35,7 +35,7 @@ const Projects = () => {
 
 
   return (
-    <div>
+    <div className='projects-container'>
       <div className="projects-list">
         {projectsData.slice(0, visibleProjects).map(project => (
           <div key={project.id} className="card">
