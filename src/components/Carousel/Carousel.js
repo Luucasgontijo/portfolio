@@ -5,8 +5,9 @@ import Tooltip from "../Tooltip/Tooltip";
 // ++++++====== icon imports
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGolang, faLinux, faPython } from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faHtml5, faCss3Alt, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import './Carousel.css'
 
 const Carousel = () => {
     useEffect(() => {

@@ -30,6 +30,7 @@ body.light-theme {
   font-weight: var(--font-superthin);
   font-size: var(--normal-font-size);
   margin: 0px 0px;
+  overflow-x: hidden;
 
 }
 
@@ -147,61 +148,6 @@ h5{
   text-decoration: underline var(--first-color);
   text-underline-offset: 0.4rem;
   text-decoration-thickness: 0.2rem;
-}
-
-/* *****====== carousel related css ======***** */
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.logos {
-  overflow: hidden;
-
-  white-space: nowrap;
-  position: relative;
-}
-.logos:before,
-.logos:after {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  height: 100%;
-  content: "";
-  z-index: 2;
-}
-.logos:before {
-  left: 0%;
-  width: 10%;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-}
-.logos:after {
-  right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-  width: 10%;
-}
-.logos:hover .logos-slide {
-  animation-play-state: paused;
-  transition: all 1s ease-in;
-}
-.logos-slide {
-  display: inline-block;
-  animation: 10s slide infinite linear;
-  margin: var(--mb-3) 0px;
-}
-.logos-slide .skills-logo {
-  height: 50px;
-  margin: 0 40px;
-}
-
-.logos-slide svg {
-  padding-top: 40px;
-  width: 3.5rem;
 }
 
 .certificate-container {
