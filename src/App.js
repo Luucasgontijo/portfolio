@@ -87,8 +87,8 @@ function App() {
               
                 <h2>Ingressei na graduação de <span>Engenharia de Software(Universidade Federal de Goiás) </span> em Janeiro de 2024, e me direcionei imediatamente ao estudo  e desenvolvimento front-end, utilizando tecnologias como <span>React</span>, <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. </h2>
 
-                <h2> Além dessas tecnologias, lido bem com <span>Golang</span>, <span>Node.js</span>, sou familiarizado com a utilização de <span>Linux (SO)</span> , e de  ``
-                <span> bancos de dados SQL</span>  e estou me  especializando no desenvolvimento utilizando <span>Python</span> e aplicações focadas em IA(LLMS), no momento, também atuo em um projeto de extensão universitário Federal, na seção de Inteligência Artificial, e no desenvolvimento de uma solução Retrieval-Augmented Generation (RAG) para a aplicação que desenvolvemos utilizando tecnologias baseadas em <span>langchain</span>, onde também tive contato com metodologias agéis, scrum e kanbam. </h2>
+                <h2> Além dessas tecnologias, lido bem com <span>Golang</span>, <span>Node.js</span>, sou familiarizado com a utilização de <span>Linux (SO)</span> , e de  
+                <span> bancos de dados relacionais (postgreSQL)</span>  e estou me  especializando no desenvolvimento utilizando <span>Python</span> e aplicações focadas em IA(LLMS), no momento, também atuo em um projeto de extensão universitário Federal, na seção de Inteligência Artificial, e no desenvolvimento de uma solução Retrieval-Augmented Generation (RAG) para a aplicação que desenvolvemos utilizando tecnologias baseadas em <span>langchain</span>, onde também tive contato com metodologias agéis, scrum e kanbam. </h2>
 
               </div>
             
