@@ -84,6 +84,7 @@ input {
 
   div{
     display: flex;
+    justify-content: row;
     margin: 1rem 1rem;
     align-self: start;
     gap: 1.5rem;
