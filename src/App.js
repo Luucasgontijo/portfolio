@@ -53,7 +53,7 @@ function App() {
       <Header />
     
       <main>
-
+            
             <section className="presentation">
             <div className="greeting">
               <h1>Seja bem vindo ao meu portfolio.</h1>
@@ -95,15 +95,20 @@ function App() {
           <Carousel/>
           <h1 className='section-title' id="sobre">Minhas certificações</h1>
           <Certificates/>
+
             </div>
 
 
-            {/* <h1 className='section-title' id="projetos">Meus projetos</h1> 
-            <Projects/> */}
+            <h1 className='section-title' id="projetos">Meus projetos</h1> 
+            <Projects/>
 
 
             <h1 className='section-title' id="contato">Vamos entrar em contato 👋</h1> 
             <Contact/>
+            <h2 style={{backgroundColor: 'red', color: 'white', textAlign: 'center', alignSelf: 'center', marginBottom: '30px', marginTop: '50px', width: '40%', padding: '10px'}
+
+            }>essa página ainda está em desenvolvimento ⚠️</h2>
+
 
               <h5>desenvolvido e mantido por Lucas Gontijo - 2024</h5>
             
