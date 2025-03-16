@@ -87,8 +87,8 @@ portfolio/
 
 ## 📷 Screenshots
 
-![HOME PAGE](<Screenshot 2025-03-16 at 00.02.58.png>)
-![BIO](<Screenshot 2025-03-16 at 00.03.19.png>)
+![HOME PAGE](<HOME.png>)
+![BIO](<BIO.png>)
 ## 🚀 Deployment
 
 This portfolio can be deployed using:
