@@ -3,6 +3,8 @@
 ![React](https://img.shields.io/badge/React-18.3.1-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+<img src="HOME_2.png" alt="HOME PAGE" width="600"/>
+
 A responsive personal portfolio website built with React, showcasing my projects, skills, and professional information.
 
 ## 📋 Table of Contents
